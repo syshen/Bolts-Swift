@@ -93,7 +93,7 @@ public final class Task<TResult> {
     }
 
     class func emptyTask() -> Task<Void> {
-        return Task<Void>(state: .success())
+        return Task<Void>(state: .success(()))
     }
 
     // MARK: Execute
